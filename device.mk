@@ -20,6 +20,9 @@ $(call inherit-product, device/xiaomi/mt6765-common/mt6765.mk)
 # Inherit proprietary parts
 $(call inherit-product-if-exists, vendor/xiaomi/cactus/cactus-vendor.mk)
 
+# Dynamic Partitioning
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
