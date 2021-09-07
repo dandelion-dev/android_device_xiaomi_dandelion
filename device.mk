@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/cactus/cactus-vendor.mk)
 
 # Dynamic Partitioning
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 6442450944
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
+BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partition
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
