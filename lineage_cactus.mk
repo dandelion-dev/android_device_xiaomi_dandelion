@@ -15,22 +15,22 @@
 #
 
 # Inherit from device
-$(call inherit-product, device/xiaomi/cactus/device.mk)
+$(call inherit-product, device/xiaomi/dandelion/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cactus
-PRODUCT_NAME := lineage_cactus
+PRODUCT_DEVICE := dandelion
+PRODUCT_NAME := lineage_dandelion
 PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi 6A
+PRODUCT_MODEL := Redmi 9C
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Override fingerprint from stock
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cactus-user 9 PPR1.180610.011 V10.4.4.0.PCBCNXM release-keys" \
-    PRODUCT_NAME="cactus" \
-    TARGET_DEVICE="cactus"
+    PRIVATE_BUILD_DESC="Redmi/angelica_global/angelica:10/QP1A.190711.020/V12.0.16.0.QCRMIXM:user/release-keys" \
+    PRODUCT_NAME="dandelion" \
+    TARGET_DEVICE="dandelion"
 
-BUILD_FINGERPRINT := xiaomi/cactus/cactus:9/PPR1.180610.011/V10.4.4.0.PCBCNXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/angelica_global/angelica:10/QP1A.190711.020/V12.0.16.0.QCRMIXM:user/release-keys
